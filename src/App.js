@@ -15,7 +15,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h1>Zomato</h1>
 
           Learn React
         </a>
