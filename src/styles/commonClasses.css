@@ -18,3 +18,10 @@
     margin-bottom: 32px;
     font-weight: 600;
 }
+
+/* carousel style  */
+
+.slick-next:before,
+.slick-prev:before{
+    color: var(--gray);
+}
