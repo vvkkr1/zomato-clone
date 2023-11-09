@@ -23,7 +23,7 @@ const HomePage = () => {
         {/* here we are passing default case value */}
         {getCorrectScreen(activeTab)}
 
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
@@ -37,7 +37,7 @@ const getCorrectScreen = (tab) => {
         case "Dining Out":
             return <DiningOut/>
             // return <div>Dining Out</div>
-        case "Night Life":
+        case "NightLife":
             return <NightLife/>
             // return <div>Night Life</div>
         default:
