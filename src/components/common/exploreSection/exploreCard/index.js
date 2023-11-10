@@ -28,6 +28,46 @@ const ExploreCard = ({restaurant}) => {
             {goldOff && <div className='gold-off absolute-center'>{goldOff}</div>}
             {discount && <div className='discount'>{discount}</div>}
         </div>
+        
+        <div className='res-row'>
+            <div className='res-name'>{name}</div>
+                {rating && 
+                    <div className='res-rating absolute-center'>   
+                        {rating} <i className="fi fi-rr-star absolute-center"></i>
+                    </div>}
+        </div>
+        
+        {/* cuisines  */}
+        <div className='res-row'>
+           {cuisines.length && 
+                <div className='res-cuisine'>
+                    {cuisines.map((item,i)=>{
+                        //here if index is not equal equal to cuisine.length - 1 means not last value or array then show ","
+                        return (
+                            <span className='res-cuisine-tag'>
+                                {item}{i!==cuisines.length-1 && ", "}
+                            </span>
+                        )
+                    })}
+                </div>
+            }        
+            {approxPrice && <div className='res-price'>{approxPrice}</div>}   
+        </div>
+
+        {/* bottomContainer  */}
+        {bottomContainers.length>0 && 
+            <div>
+                <div className='card-separator'></div>
+                <div className='explore-bottom'>
+                    <img 
+                        src={bottomContainers[0]?.image?.url} 
+                        style={{height:"18px"}}
+                        alt={bottomContainers[0]?.text} 
+                        /> 
+                <div className='res-bottom-text'>{bottomContainers[0]?.text}</div> 
+                </div>
+            </div>
+        }
     </div>
   )
 }
