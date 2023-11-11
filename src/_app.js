@@ -1,11 +1,11 @@
 import React from 'react'
 import HomePage from './pages/home';
 
-const App = () => {
+const HomeApp = () => {
   return (
     <div>
        <HomePage/>
     </div>
   )
 }
-export default App;
+export default HomeApp;
