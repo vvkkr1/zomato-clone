@@ -137,3 +137,9 @@
     text-overflow: ellipsis;
     margin-left: 8px;
 }
+
+.card-separator{
+    height: 1px;
+    margin: 12px 0px 5px;
+    color: var(--border-white);
+}
