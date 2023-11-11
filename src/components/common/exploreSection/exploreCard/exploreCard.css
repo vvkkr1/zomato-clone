@@ -137,3 +137,14 @@
     text-overflow: ellipsis;
     margin-left: 8px;
 }
+
+.card-separator{
+    height: 1px;
+    margin: 12px 0px 5px;
+    background-color: var(--border-white);
+}
+
+.explore-card:hover{
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-white);
+}
