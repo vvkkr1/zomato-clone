@@ -23,7 +23,7 @@ const HomePage = () => {
         {/* here we are passing default case value */}
         {getCorrectScreen(activeTab)}
 
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }
