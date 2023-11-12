@@ -1,50 +1,33 @@
-import React, { useState } from 'react'
-import Header from '../../components/common/header';
-import TabOptions from '../../components/common/tabOptions';
-import Footer from '../../components/common/footer';
-import DiningOut from '../../components/diningOut';
-import Delivery from '../../components/delivery';
-import NightLife from '../../components/nightLife';
+import React,{useState} from 'react'
+import Header from '../../components/common/header'
+import TabOptions from '../../components/common/tabOptions'
 
 const HomePage = () => {
-
-    //this state to check case in switch
-    const[activeTab, setActiveTab] = useState("Delivery")
-
+  const [activeTab, setActiveTab]=useState('Delivery')
   return (
     <div>
-        <Header/>
-
-        {/*props pass name as activeTab and setActiveTab to TabOption*/}
-        <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
-        
-        {/*Diff screens*/}
-
-        {/* here we are passing default case value */}
-        {getCorrectScreen(activeTab)}
-
-        {/* <Footer/> */}
+       <Header/>
+       <TabOptions/>
+       {/* Diff screens */}
+       {getSelectedScreen(activeTab)}
     </div>
   )
 }
-const getCorrectScreen = (tab) => {
 
-    //inside tab we are getting cases tab
-    switch(tab){
-        case "Delivery":
-            return <Delivery/>
-            // return <div>Delhivery</div>
-        case "Dining Out":
-            return <DiningOut/>
-            // return <div>Dining Out</div>
-        case "NightLife":
-            return <NightLife/>
-            // return <div>Night Life</div>
-        default:
-            return <Delivery/>
-            // return <div>Delhivery</div>
-    }
-  
+function getSelectedScreen(tab){
+  switch(tab){
+    case "delivery":
+      return <h1>Hello delivery</h1>
+    case "diningOut":
+      return <h1>Hello dining Out</h1>
+    case "nightOut":
+      return <h1>Hello nightOut</h1>
+    default:
+      return <h1>Delivery</h1>
+
   }
 
-export default HomePage;
+}
+
+
+export default HomePage

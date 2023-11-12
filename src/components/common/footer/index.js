@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-        Made with ~~~🔥🔥🔥 Zoomato🔥🔥🔥
+        This is footer
     </div>
   )
 }
