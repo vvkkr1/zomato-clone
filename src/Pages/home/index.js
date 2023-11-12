@@ -7,9 +7,9 @@ const HomePage = () => {
   return (
     <div>
        <Header/>
-       <TabOptions/>
+       {/* <TabOptions/> */}
        {/* Diff screens */}
-       {getSelectedScreen(activeTab)}
+       {/* {getSelectedScreen(activeTab)} */}
     </div>
   )
 }
