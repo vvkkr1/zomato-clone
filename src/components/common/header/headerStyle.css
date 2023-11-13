@@ -10,14 +10,15 @@
     cursor: pointer;
 }
 
+
 .header-right{
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
     height: 72px;
+    margin: 0px 16px;
 }
-
 .header-location-search-container{
     height: 54px;
     display: flex;
@@ -29,6 +30,7 @@
     background: var(--primary-bg);
 }
 
+/* location  */
 .location-wrapper{
     display: flex;
     flex: 1;
@@ -39,9 +41,74 @@
     display: flex;
     color: var(--zomato-gray);
 }
-
 .location-icon{
     color: var(--zomato-red);
     font-size: 20px;
     margin-right: 10px;
 }
+.location-search-separator{
+    height: 20px;
+    border: 0.5px solid var(--gray);
+
+}
+
+
+.header-searchBar{
+    display: flex;
+    flex: 2;
+}
+.search-icon{
+    font-size: 20px;
+    margin: 0px 12px;
+    color: var(--zomato-gray);
+}
+.search-input{
+    border: none;
+    outline: none;
+    width: 60%;
+    font-size: 14px;
+}
+
+
+/* profile  */
+.profile-wrapper{
+    display: flex;
+    /* width: 100%; */
+    /* flex: .5; */
+    height: 72px;
+    align-items: center;
+    flex-wrap: nowrap;
+    opacity: 1;
+    padding: 17px 0px;
+    margin: 0px;
+    transition: opacity 0.25s linear 0s, visibility 0.25s linear 0s, height 0.25s cubic-bezier(0.52, 0.16, 0.24, 1) 0s;
+}
+
+.login-btn{
+    font-size: 18px;
+    color: var(--primary-btn);
+    padding: 8px !important;
+    border-radius: 6px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 500;
+
+
+}
+
+.signup-btn{
+    font-size: 18px;
+    color: var(--primary-btn);
+    padding: 8px !important;
+    border-radius: 6px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 500;
+
+
+}
+
+li{
+    list-style: none;
+}
+
