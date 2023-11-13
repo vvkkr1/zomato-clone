@@ -1,29 +1,32 @@
 import React,{useState} from 'react'
 import Header from '../../components/common/header'
 import TabOptions from '../../components/common/tabOptions'
+import Delivery from '../../components/delivery'
+import DiningOut from '../../components/diningOut/diningOut'
+import NightLife from '../../components/nightLife/nightLife'
 
 const HomePage = () => {
   const [activeTab, setActiveTab]=useState('Delivery')
   return (
     <div>
        <Header/>
-       {/* <TabOptions/> */}
+       <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
        {/* Diff screens */}
-       {/* {getSelectedScreen(activeTab)} */}
+       {getSelectedScreen(activeTab)}
     </div>
   )
 }
 
 function getSelectedScreen(tab){
   switch(tab){
-    case "delivery":
-      return <h1>Hello delivery</h1>
-    case "diningOut":
-      return <h1>Hello dining Out</h1>
-    case "nightOut":
-      return <h1>Hello nightOut</h1>
+    case "Delivery":
+      return <Delivery/>
+    case "DiningOut":
+      return <DiningOut/>
+    case "NightOut":
+      return <NightLife/>
     default:
-      return <h1>Delivery</h1>
+      return <Delivery />
 
   }
 
