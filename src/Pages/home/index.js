@@ -21,9 +21,9 @@ function getSelectedScreen(tab){
   switch(tab){
     case "Delivery":
       return <Delivery/>
-    case "DiningOut":
+    case "Dining Out":
       return <DiningOut/>
-    case "NightOut":
+    case "Night Out":
       return <NightLife/>
     default:
       return <Delivery />

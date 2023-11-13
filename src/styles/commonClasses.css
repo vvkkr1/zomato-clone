@@ -10,3 +10,10 @@
 .cur-po{
     cursor: pointer;
 }
+
+.title{
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0px 0px 32px;
+}

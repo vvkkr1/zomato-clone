@@ -10,6 +10,10 @@
     margin: 10px 10px 10px 0px;
 
 }
+.filterItem-wrapper:hover{
+    background: rgb(248, 248, 248)
+}
+
 .filter-title{
     align-items: center;
     margin-left: 5px;
