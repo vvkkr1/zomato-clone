@@ -9,7 +9,7 @@ const ExploreCard = ({restaurant}) => {
   const icon = restaurant?.info?.image?.url ?? "";
   const rating = restaurant?.info?.rating?.rating_text ?? "";
 
-  console.log("valuee------",restaurant)
+  // console.log("valuee------",restaurant)
   return (
     <div className='explore-card'>
       <div className='explore-card-cover cur-po'>
