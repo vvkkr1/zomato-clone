@@ -7,7 +7,7 @@ const ExploreCard = ({restaurant}) => {
 
   const name = restaurant?.info?.name ?? "";
   const icon = restaurant?.info?.image?.url ?? "";
-
+  const rating = restaurant?.info?.rating?.rating_text ?? "";
 
   console.log("valuee------",restaurant)
   return (
@@ -19,6 +19,14 @@ const ExploreCard = ({restaurant}) => {
               />
       </div>
     {/* <div className='card-promo-offer'></div> */}
+      <div className='card-container'>
+            <div className='card-title'>{name}</div>
+            <div className='card-rating-star-container'>
+                <div className='card-rating absolute-center'>{rating}</div>
+                <i class="fi fi-rr-star absolute-center rating-star"></i>
+            </div> 
+      </div>
+
 
     </div>
   )
