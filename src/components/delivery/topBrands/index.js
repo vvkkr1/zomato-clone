@@ -87,14 +87,13 @@ const TopBrand = () => {
   return (
     <div className='topBrands'>
         <div className='max-width topBrands-container'>
-            <div className='title'>Top brands for you...</div>
+            <div className='title'>Top brands for you</div>
             <Slider {...settings}>
                 {itemList && itemList.map((List)=>{
                     return <ItemList List={List}/>
                 })}
             </Slider>
         </div>
-        This is Top Brand Section
     </div>
   )
 }
