@@ -6,7 +6,7 @@ const NextArrow = (props) => {
       <div
         className={className}
         style={{ ...style, 
-              background:"white",
+              background:"green",
               borderRadius:"50%",
               display:"flex",
               justifyContent:"center",
