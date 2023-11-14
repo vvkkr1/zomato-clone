@@ -1,5 +1,5 @@
 import React from 'react'
-import './itemCard.css'
+import './exploreCard.css'
 
 
 
@@ -12,14 +12,14 @@ const ExploreCard = ({restaurant}) => {
   console.log("valuee------",restaurant)
   return (
     <div className='explore-card'>
-      <div className='card-image-container'>
+      <div className='explore-card-cover cur-po'>
           <img src={icon}
-              className='card-image'
+              className='explore-card-image'
               alt={name}
               />
-          {/* <div className='card-promo-offer'></div> */}
       </div>
-        This is item card
+    {/* <div className='card-promo-offer'></div> */}
+
     </div>
   )
 }
