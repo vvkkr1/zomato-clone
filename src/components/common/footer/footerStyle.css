@@ -3,15 +3,18 @@
     background: rgb(248, 248, 248);
 }
 
-.footer-container{
+.footer-wrap{
+    padding: 48px 0px 22px;
+}
+
+
+.head-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-right{
 
-}
 .footer-country{
     display: flex;
     justify-content: space-between;
@@ -104,6 +107,38 @@
 }
 
 
+.main-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
 
+/* //About Section style  */
+.about-zomato{
+    /* margin-top: 150px; */
+}
+.about-title{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px 0px 12px;
+}
+.about-zomato-wrap{
 
+}
+/* end  */
 
+/* Zomaverse section style  */
+.zomaverse{
+    /* margin-top: 110px; */
+}
+.zomaverse-title{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px 0px 12px;
+}

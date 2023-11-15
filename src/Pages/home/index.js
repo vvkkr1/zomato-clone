@@ -10,10 +10,10 @@ const HomePage = () => {
   const [activeTab, setActiveTab]=useState('Delivery')
   return (
     <div>
-       {/* <Header/> */}
-       {/* <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/> */}
+       <Header/>
+       <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
        {/* Diff screens */}
-       {/* {getSelectedScreen(activeTab)} */}
+       {getSelectedScreen(activeTab)}
        <Footer/>
     </div>
   )
