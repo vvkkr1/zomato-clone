@@ -5,6 +5,7 @@ import Delivery from '../../components/delivery'
 import DiningOut from '../../components/diningOut/diningOut'
 import NightLife from '../../components/nightLife/nightLife'
 import Footer from '../../components/common/footer'
+import Testimonials from '../../components/common/testimonials'
 
 const HomePage = () => {
   const [activeTab, setActiveTab]=useState('Delivery')
@@ -14,6 +15,7 @@ const HomePage = () => {
        <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
        {/* Diff screens */}
        {getSelectedScreen(activeTab)}
+       <Testimonials/>
        <Footer/>
     </div>
   )

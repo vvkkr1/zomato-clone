@@ -4,8 +4,8 @@ import './footerStyle.css';
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className='max-width footer-wrap'>
-          
+      
+      <div className='max-width footer-wrap'>    
           {/* head of footer  */}
           <div className='head-wrap'>
               <div className='footer-image-container'>
@@ -70,8 +70,8 @@ const Footer = () => {
           </div>
           
           {/* bottom of footer  */}
-
       </div>
+      
     </div>
   )
 }
