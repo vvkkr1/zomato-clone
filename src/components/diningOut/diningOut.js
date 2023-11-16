@@ -1,10 +1,10 @@
 import React from 'react'
-import './diningOut.css'
+import './diningOut.css';
 
 const DiningOut = () => {
   return (
     <div>
-        This is dining out
+        This is diningOut tab    
     </div>
   )
 }

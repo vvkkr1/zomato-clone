@@ -4,7 +4,7 @@ import './nightLife.css'
 const NightLife = () => {
   return (
     <div>
-        This is NightLife Component
+       This is nightLife Tab
     </div>
   )
 }

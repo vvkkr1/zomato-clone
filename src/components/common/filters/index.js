@@ -1,18 +1,13 @@
 import React from 'react'
 import './filters.css';
-import FilterItem from './filterItem';
+import FilterItems from './filterItem';
 
 const Filters = ({filterList}) => {
-
   return (
-    <div className = "filters">
-        {/* This is filters!!! */}
-        {
-          filterList && filterList.map((item)=>{
-            // console.log(item)
-            return <FilterItem filter={item} key={item.id}/>
-          })
-        }
+    <div className='filter cur-po'>
+        {filterList && filterList.map((item)=>{
+            return <FilterItems item={item} key={item.id}/>
+        })}
     </div>
   )
 }

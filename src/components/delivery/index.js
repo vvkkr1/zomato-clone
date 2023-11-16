@@ -1,51 +1,44 @@
 import React from 'react'
-import './delivery.css'
-import Filters from '../common/filters'
-import DeliveryCollections from './deliveryCollections'
-import TopBrands from './topBrands'
-import ExploreSection from '../common/exploreSection'
-import { restaurants } from '../../data/restaurants'
+import './delivery.css';
+import Filters from '../common/filters';
+import DeliveryCollection from './deliveryCollection';
+import TopBrand from './topBrands';
+import ExploreSection from '../common/exploreSection';
+import { restaurants } from '../../data/restaurants';
 
-const deliveryFilters=[
-    {
-      id:1,
-      icon:<i className="fi fi-rr-settings-sliders"></i>,
-      title:"Filters",
-    },
-    {
-      id:2,
-      title:"Rating: 4.0+",
-    },
-    {
-      id:3,
-      title:"Safe and Hygienic",
-    },
-    {
-      id:4,
-      title:"Pure Veg"
-    },
-    {
-      id:5,
-      title:"Delivery Time",
-      icon:<i className='fi fi-rr-apps-sort absolute-center'></i>,
-    },
-    {
-      id:6,
-      title:"Great Offers"
-    }
+const deliveryFilter = [
+  {
+    id:1,
+    icon:<i className="fi fi-rr-settings-sliders"></i>,
+    title:"Filters"
+  },
+  {
+    id:2,
+    title:"Rating: 4.0+"
+  },
+  {
+    id:3,
+    title:"Pure Veg"
+  },
+  {
+    id:4,
+    title: "Cuisines",
+    icon:<i class="fi fi-ts-caret-down"></i>
+  }
 ]
 
 const restaurantList = restaurants;
 
+
 const Delivery = () => {
   return (
-    <div>
-       <div className='max-width'>
-          <Filters filterList={deliveryFilters}/>
-       </div>
-          <DeliveryCollections/>
-          <TopBrands/>
-          <ExploreSection list={restaurantList} collectionName = 'Delivery Restaurants in Bangalore'/>
+    <div className='delivery-container'>
+      <div className='max-width filter-wrap'>
+         <Filters filterList={deliveryFilter}/>
+      </div>
+         <DeliveryCollection />
+         <TopBrand/>
+         <ExploreSection list={restaurantList} collectionName="Delivery Restaurants in Bengaluru"/>
     </div>
   )
 }

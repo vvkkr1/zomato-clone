@@ -1,50 +1,40 @@
-import React, { useState } from 'react'
-import Header from '../../components/common/header';
-import TabOptions from '../../components/common/tabOptions';
-import Footer from '../../components/common/footer';
-import DiningOut from '../../components/diningOut';
-import Delivery from '../../components/delivery';
-import NightLife from '../../components/nightLife';
+import React,{useState} from 'react'
+import Header from '../../components/common/header'
+import TabOptions from '../../components/common/tabOptions'
+import Delivery from '../../components/delivery'
+import DiningOut from '../../components/diningOut/diningOut'
+import NightLife from '../../components/nightLife/nightLife'
+import Footer from '../../components/common/footer'
+import Testimonials from '../../components/common/testimonials'
 
 const HomePage = () => {
-
-    //this state to check case in switch
-    const[activeTab, setActiveTab] = useState("Delivery")
-
+  const [activeTab, setActiveTab]=useState('Delivery')
   return (
     <div>
-        <Header/>
-
-        {/*props pass name as activeTab and setActiveTab to TabOption*/}
-        <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
-        
-        {/*Diff screens*/}
-
-        {/* here we are passing default case value */}
-        {getCorrectScreen(activeTab)}
-
-        {/* <Footer/> */}
+       <Header/>
+       <TabOptions activeTab={activeTab} setActiveTab={setActiveTab}/>
+       {/* Diff screens */}
+       {getSelectedScreen(activeTab)}
+       <Testimonials/>
+       <Footer/>
     </div>
   )
 }
-const getCorrectScreen = (tab) => {
 
-    //inside tab we are getting cases tab
-    switch(tab){
-        case "Delivery":
-            return <Delivery/>
-            // return <div>Delhivery</div>
-        case "Dining Out":
-            return <DiningOut/>
-            // return <div>Dining Out</div>
-        case "NightLife":
-            return <NightLife/>
-            // return <div>Night Life</div>
-        default:
-            return <Delivery/>
-            // return <div>Delhivery</div>
-    }
-  
+function getSelectedScreen(tab){
+  switch(tab){
+    case "Delivery":
+      return <Delivery/>
+    case "Dining Out":
+      return <DiningOut/>
+    case "Night Out":
+      return <NightLife/>
+    default:
+      return <Delivery />
+
   }
 
-export default HomePage;
+}
+
+
+export default HomePage

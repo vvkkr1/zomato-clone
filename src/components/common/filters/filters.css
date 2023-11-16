@@ -1,5 +1,6 @@
-.filters{
-    padding: 16px 0px;
+.filter{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 16px 0px;
 }
+
